@@ -1,10 +1,26 @@
 @charset "UTF-8";
 
+/*
+
+tan: #FFECCA
+green: #1A8663
+pink: #F8B0A5
+blue: #187CBA
+
+darker pink: E5998E
+#31452e
+
+*/
+
 body{
 
 	font-size:1rem;
-    background-color: #f7f7f7;
+  background-color: #1A8663;
 
+}
+
+.caseStudy{
+	background-color: #f8f2e8
 }
 
 a{
@@ -18,25 +34,25 @@ h2{
 }
 
 h3{
-    font-family: "freight-display-pro", sans-serif;
-    font-size: 35px;
-    color: #3B5BAB;
+    font-family: "Asul", sans-serif;
+    font-size: 55px;
+    color: #E5998E;
     line-height: 1.2;
 
 }
 
 h4{
-    font-family: 'Miriam Libre', sans-serif;
-    font-size: 14px;
-    color: #C8C7C9;
+    font-family: 'Almendra', serif;
+    font-size: 18px;
+    color: #E5998E;
     padding-bottom: 3px;
 
 }
 
 h5{
-    font-family: 'Miriam Libre', sans-serif;
-    font-size: 14px;
-    color: #6A87CF;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    color: #4E4848;
     line-height: 1.5;
 
 }
@@ -60,35 +76,78 @@ li{
     text-decoration: none;
 }
 
-/*------ navbar ------*/
-
-.navSpace{
-	height: 280px;
-    padding-top: 80px;
+.introText{
+    font-family: 'Asul', sans-serif;
+    font-size: 55px;
+    color: #FFECCA;
+    margin: 0px;
+		line-height: 1.3;
 }
 
-.introText{
-    font-family: 'Miriam Libre', sans-serif;
-    font-size: 18px;
-    color: #3B5BAB;
-    margin: 0px;
-    line-height: 1.7;
+.miniRes{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	color: #FFECCA;
+}
+
+.miniRes p {
+	margin-bottom: 30px;
+}
+
+.miniRes a {
+	font-family: "Asul", sans-serif;
+	font-weight: 700;
+
+}
+
+.miniRes a:hover {
+	font-family: "Asul", sans-serif;
+	font-weight: 700;
+	color: #F8B0A5;
+}
+
+.introText a:hover {
+	color: #F8B0A5;
 }
 
 .homeText{
-    font-family: 'Miriam Libre', sans-serif;
-    font-size: 15px;
-    color: #3B5BAB;
+    font-family: 'Almendra', serif;
+    font-size: 18px;
+    color: #F8B0A5;
     margin: 0px;
     line-height: 1.7;
+}
+
+.teaserText{
+	font-family: 'Asul', sans-serif;
+	font-size: 50px;
+	color: #FFECCA;
+	z-index: 1;
+}
+
+.teaserText .bold{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+}
+
+.labelText{
+    font-family: "Almendra", sans-serif;
+		color: #F8B0A5;
+    font-size: 18px;
+}
+
+/*------ navbar ------*/
+
+.navSpace{
+  padding-top: 50px;
+	padding-bottom: 20px;
 }
 
 
 .nav{
-    font-family: "freight-display-pro", sans-serif;
-    font-size: 55px;
-
-
+    font-family: "Almendra", sans-serif;
+		color: #F8B0A5;
+    font-size: 18px;
 }
 
 
@@ -97,17 +156,6 @@ li{
     vertical-align: top;
     display: inline;
 
-}
-
-.Work{
-    color: #3FAAF8;
-    line-height: 1.0;
- }
-
-.About{
-    color: #EC6D71;
-    line-height: 1.7;
- 
 }
 
 .Play{
@@ -131,7 +179,7 @@ a:hover{
     text-decoration: none;
     list-style-type:none;
 
-hr { 
+hr {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -139,10 +187,72 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-} 
-
 }
 
+}
+/*------ home sections ----*/
+
+.pointer{
+	width: 80px;
+	margin-left: 20px;
+}
+
+.overlay-1 {
+	margin: -250px 0 0 0;
+	width: 450px;
+	filter: grayscale(100%);
+	opacity: .3;
+}
+
+.ask {
+	width: 250px;
+	margin: -250px 0 0 0;
+	opacity: 0;
+}
+
+.homeTeaser:hover .ask{
+	opacity: 1;
+}
+
+.homeTeaser:hover .overlay-1{
+	filter:grayscale(0%);
+	opacity: 1;
+	z-index: 100;
+}
+
+.homeTeaser:hover .teaserText{
+	z-index: 0;
+}
+
+.overlay-2{
+	margin: -250px 0 0 0;
+	width: 350px;
+	filter: grayscale(100%);
+	opacity: .3;
+}
+
+.homeTeaser:hover .overlay-2{
+	filter:grayscale(0%);
+	opacity: 1;
+	z-index: 100;
+}
+
+.clientCallout{
+	background-color: #FFECCA;
+	padding: 75px 100px 75px 100px;
+	margin-bottom: 100px;
+}
+
+.clientCallout .labelText{
+	color: #F8B0A5;
+}
+
+.clientText{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	color: #F8B0A5;
+}
 
 /*------ grid ------*/
 
@@ -155,7 +265,7 @@ hr {
 }
 
 .space-sm{
-    margin-top:40px;
+    margin-top:20px;
 }
 
 
@@ -226,7 +336,7 @@ hr {
 .mask{
     padding: 0px 15px;
     height:0px;
- 
+
 }
 
 .view p {
@@ -263,7 +373,7 @@ hr {
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
-/*.view-first p { 
+/*.view-first p {
     transform: translateY(100px);
     opacity: 0;
     transition: all 0.2s ease-in-out;
@@ -295,42 +405,45 @@ hr {
 /*----- TABLET -----*/
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 
-.navSpace{
-    height: 230px;
-}
-
-.space{
-    margin-top: 50px;
-
-}
-.Work {
-    line-height: .8;
-}
 
 .introText {
-    font-size: 16px;
-}
-
-.nav {
     font-size: 45px;
 }
 
-.heading{
-    font-size: 16px;
+.teaserText {
+    font-size: 35px;
 }
 
-.p{
-    font-size: 13px;
+.overlay-1 {
+	margin: -200px 0 0 0;
+	width: 350px;
 }
 
-h3{
-    font-size: 30px;
-    line-height: 1.2;
+.ask {
+	width: 200px;
+	margin: -250px 0 0 0;
+}
 
+.overlay-2{
+	margin: -200px 0 0 0;
+	width: 270px;
 }
 
 .space-resp{
     padding-top: 20px;
+}
+
+.clientCallout{
+	background-color: #FFECCA;
+	padding: 75px 100px 75px 100px;
+	margin-bottom: 100px;
+}
+
+.clientText{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	color: #F8B0A5;
 }
 
 }
@@ -344,39 +457,53 @@ h3{
 
 }
 
+.introText{
+	font-size: 30px;
+}
+
+.teaserText{
+	font-size: 25px;
+}
+
+.overlay-1 {
+	margin: -150px 0 0 0;
+	width: 250px;
+}
+
+.ask {
+	width: 150px;
+	margin: -200px 0 0 0;
+}
+
+.overlay-2{
+	margin: -150px 0 0 0;
+	width: 200px;
+}
+
+.space-lg{
+	margin-top: 40px;
+}
+
 h4, h5{
-    font-size: 13px;
+    font-size: 15px;
 }
 
-.Work {
-    line-height: .8;
-    text-align: center;
-}
-
-.About {
-    line-height: .8;
-    text-align: center;
-}
-
-.Play{
-    text-align: center;
-}
-
-.mobile-nav{
-    background-color: #fff;
-    padding: 15px 0px
-}
 
 .nav {
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .navSpace{
-    height: 175px;
+    height: 120px;
 }
 
 .space{
     margin-top:40px;
+
+}
+
+.space-sm{
+    margin-top: 20px;
 
 }
 
@@ -388,10 +515,21 @@ h4, h5{
     margin-top: 10px;
 }
 
+.clientText{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #F8B0A5;
+}
+
+.clientCallout{
+	background-color: #FFECCA;
+	padding: 50px 40px;
+	margin-bottom: 100px;
+}
+
 
 
 
 
 }
-
-
